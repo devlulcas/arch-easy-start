@@ -21,7 +21,7 @@ chmod +x ./flatpack.sh
 ./flatpack.sh
 ```
 
-# SETUP GIT:
+## SETUP GIT:
 
 ```sh
 #Op 1
