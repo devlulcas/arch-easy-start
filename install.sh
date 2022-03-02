@@ -16,6 +16,9 @@ pacman -S noto-fonts-emoji --needed
 sudo chmod +x ./fixemoji.sh
 sudo ./fixemoji.sh
 
+center_text "${YELLOW} FIRA CODE ${NOCOLOR}" "=" 5
+sudo pacman -S ttf-fira-code 
+
 center_text "${YELLOW} GIT ${NOCOLOR}" "=" 5
 sudo pacman -S git
 git config --global user.email "lucasalvesrego.contato@gmail.com"
@@ -55,10 +58,15 @@ center_text "${YELLOW} APACHE ${NOCOLOR}" "=" 5
 sudo pacman -S apache 
 
 center_text "${YELLOW} PHP ${NOCOLOR}" "=" 5
-sudo pacman -S php
+sudo pacman -S php php-apache 
 
 center_text "${YELLOW} COMPOSER ${NOCOLOR}" "=" 5
 sudo pacman -S composer
+
+center_text "${YELLOW} DOCKER ${NOCOLOR}" "=" 5
+sudo pacman -S docker
+sudo systemctl start docker
+sudo systemctl enable docker
 
 center_text "${YELLOW} JAVA JRE ${NOCOLOR}" "=" 5
 sudo pacman -S jre-openjdk
