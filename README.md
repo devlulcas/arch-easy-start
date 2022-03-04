@@ -15,6 +15,8 @@ I don't know much about shell scripting, so some of these scripts are not mine.
 
 ```sh
 sudo pacman -S zsh
+chsh -s $(which zsh)
+reboot
 chmod +x ./install.sh
 ./install.sh
 
