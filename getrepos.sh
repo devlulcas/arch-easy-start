@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 NOCOLOR='\033[0m'
 GREEN='\033[1;32m'

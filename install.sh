@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 NOCOLOR='\033[0m'
 YELLOW='\033[1;33m'
@@ -34,8 +34,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-center_text "${YELLOW} ZSH ++ OH MY ZSH ${NOCOLOR}" "=" 5
-sudo pacman -S zsh
+center_text "${YELLOW} OH MY ZSH ${NOCOLOR}" "=" 5
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 center_text "${YELLOW} VIM ${NOCOLOR}" "=" 5

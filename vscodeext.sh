@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # THEMES
 # omni owl - material icon theme

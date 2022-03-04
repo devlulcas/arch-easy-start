@@ -14,6 +14,7 @@ I don't know much about shell scripting, so some of these scripts are not mine.
 ## RUN:
 
 ```sh
+sudo pacman -S zsh
 chmod +x ./install.sh
 ./install.sh
 
