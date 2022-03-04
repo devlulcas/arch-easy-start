@@ -43,6 +43,9 @@ code --install-extension bmewburn.vscode-intelephense-client
 center_text "${CYAN} MARKDOWN ${NOCOLOR}" "=" 5
 code --install-extension bierner.markdown-preview-github-styles
 
+center_text "${CYAN} MARKDOWN ${NOCOLOR}" "=" 5
+code --install-extension mathiasfrohlich.Kotlin
+
 # NICE
 # live server - intellicode - gitlens - eslint
 center_text "${CYAN} UTILITY ${NOCOLOR}" "=" 5
