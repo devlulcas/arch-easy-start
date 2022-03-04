@@ -22,6 +22,14 @@ chmod +x ./flatpack.sh
 ./flatpack.sh
 ```
 
+## ACTIVATE PLUGINS
+```sh
+plugins=(
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+```
 ## SETUP GIT:
 
 ```sh
