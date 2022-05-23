@@ -4,4 +4,4 @@ mkdir ~/Coding
 cd ~/Coding
 mkdir Experiments Projects Learning Godot Job Scripts 
 cd ~/Coding/Learning 
-mkdir css git javascript kotlin php python sql svelte react typescript
+mkdir javascript typescript kotlin php sql svelte react elixir go rust 
