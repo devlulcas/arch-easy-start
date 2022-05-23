@@ -39,23 +39,23 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# LANGUAGES
 
-center_text "${YELLOW} VIM ${NOCOLOR}" "=" 5
-sudo pacman -S nvim 
-echo "alias vim=\"nvim\"" > ~/.zshrc
-
+## PYTHON
 center_text "${YELLOW} PYTHON ${NOCOLOR}" "=" 5
 sudo pacman -S python
 
 center_text "${YELLOW} PIP ${NOCOLOR}" "=" 5
 sudo pacman -S python-pip
 
+## NODE
 center_text "${YELLOW} NODE ${NOCOLOR}" "=" 5
 sudo pacman -S nodejs
 
 center_text "${YELLOW} NPM ${NOCOLOR}" "=" 5
 sudo pacman -S npm
 
+## PHP
 center_text "${YELLOW} APACHE ${NOCOLOR}" "=" 5
 sudo pacman -S apache 
 
@@ -65,17 +65,29 @@ sudo pacman -S php php-apache
 center_text "${YELLOW} COMPOSER ${NOCOLOR}" "=" 5
 sudo pacman -S composer
 
-center_text "${YELLOW} DOCKER ${NOCOLOR}" "=" 5
-sudo pacman -S docker
-sudo systemctl start docker
-sudo systemctl enable docker
-
+## JAVA
 center_text "${YELLOW} JAVA JRE ${NOCOLOR}" "=" 5
 sudo pacman -S jre-openjdk
 
 center_text "${YELLOW} JAVA JDK ${NOCOLOR}" "=" 5
 sudo pacman -S jdk-openjdk
 
+## GO
+center_text "${YELLOW} GO LANG ${NOCOLOR}" "=" 5
+sudo pacman -S go
+
+center_text "${YELLOW} GO TOOLS ${NOCOLOR}" "=" 5
+sudo pacman -S go-tools
+
+## ELIXIR
+center_text "${YELLOW} ELIXIR ${NOCOLOR}" "=" 5
+sudo pacman -S elixir
+
+## RUST
+center_text "${YELLOW} RUST ${NOCOLOR}" "=" 5
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# EDITORES
 center_text "${YELLOW} VSCODE ${NOCOLOR}" "=" 5
 yay -S visual-studio-code-bin 
 
@@ -83,17 +95,22 @@ center_text "${YELLOW} VSCODE EXTENSIONS ${NOCOLOR}" "=" 5
 chmod +x ./vscodeext.sh
 ./vscodeext.sh
 
-center_text "${YELLOW} INTELIJJ ${NOCOLOR}" "=" 5
-sudo pacman -S intellij-idea-community-edition
+center_text "${YELLOW} VIM ${NOCOLOR}" "=" 5
+sudo pacman -S nvim 
+echo "alias vim=\"nvim\"" > ~/.zshrc
 
-center_text "${YELLOW} ANDROID STUDIO ${NOCOLOR}" "=" 5
-yay -S android-studio
-
+# NAVEGADORES
 center_text "${YELLOW} FIREFOX ${NOCOLOR}" "=" 5
 sudo pacman -S firefox 
 
 center_text "${YELLOW} BRAVE ${NOCOLOR}" "=" 5
 yay -S brave-bin
+
+# UTILIDADES
+center_text "${YELLOW} DOCKER ${NOCOLOR}" "=" 5
+sudo pacman -S docker
+sudo systemctl start docker
+sudo systemctl enable docker
 
 center_text "${YELLOW} VLC ${NOCOLOR}" "=" 5
 sudo pacman -S vlc 
