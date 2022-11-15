@@ -13,18 +13,23 @@ I don't know much about shell scripting, so some of these scripts are not mine.
 
 ## RUN:
 
-```sh
-sudo pacman -S zsh
-chsh -s $(which zsh)
-reboot
-chmod +x ./install.sh
-./install.sh
+> That one will run scripts that need root and uses pacman.
 
-chmod +x ./flatpack.sh
-./flatpack.sh
+```sh
+chmod +x ./init.sh
+sudo ./init.sh
+reboot
+```
+
+> That one will run scripts that don't need root.
+
+```bash
+chmod +x ./aur.sh
+./aur.sh
 ```
 
 ## ACTIVATE PLUGINS
+
 ```sh
 plugins=(
   git
@@ -32,14 +37,15 @@ plugins=(
   zsh-autosuggestions
 )
 ```
-## SETUP GIT:
+
+## SETUP GIT SSH:
 
 ```sh
 #Op 1
-ssh-keygen -t ed25519 -C "lucasalvesrego.contato@gmail.com"
+ssh-keygen -t ed25519 -C "example@mail.com"
 
 #Op 2
-ssh-keygen -t ecdsa-sk -C "https://github.com/devlulcas"
+ssh-keygen -t ecdsa-sk -C "https://github.com/user"
 
 eval "$(ssh-agent -s)"
 
@@ -47,5 +53,10 @@ ssh-add ~/.ssh/id_ed25519
 
 cat ~/.ssh/id_ed25519.pub
 
+```
+
+> On github
+
+```
 > Configs / Access / SSH and GPG keys / New SSH key
 ```
