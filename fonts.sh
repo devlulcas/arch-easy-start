@@ -6,11 +6,13 @@ echo
 echo -e "\033[32mINSTALLING FONTS\033[0m"
 echo
 
-sudo pacman -S ttf-fira-code --noconfirm --needed
+FONTS=(
+    "ttf-fira-code"
+    "nerd-fonts-fira-code"
+    "noto-fonts"
+)
 
-sudo pacman -S nerd-fonts-fira-code --noconfirm --needed
-
-sudo pacman -S noto-fonts --noconfirm --needed
+sudo pacman -S "${FONTS[@]}" --noconfirm --needed
 
 source fixemoji.sh
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source yay.sh
+
 echo
 echo -e "\033[32mINSTALLING AUR PACKAGES\033[0m"
 echo
