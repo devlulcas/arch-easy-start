@@ -8,13 +8,20 @@ echo
 
 FONTS=(
     "ttf-fira-code"
-    "nerd-fonts-fira-code"
     "noto-fonts"
 )
 
 sudo pacman -S "${FONTS[@]}" --noconfirm --needed
 
+echo "Instalando fonte fira-code nerd font..."
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
+unzip FiraCode.zip -d ~/.local/share/fonts
+fc-cache -fv
+rm FiraCode.zip
+
 source fixemoji.sh
+
 
 echo
 echo -e "\033[32mDONE :)\033[0m"
