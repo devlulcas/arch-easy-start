@@ -7,7 +7,7 @@ echo
 echo -e "\033[32mINSTALLING NOTO FONTS EMOJI\033[0m"
 echo
 
-pacman -S noto-fonts-emoji --needed --noconfirm
+pacman -S --needed --noconfirm noto-fonts-emoji 
 
 # 2 - add font config to /etc/fonts/conf.d/01-notosans.conf
 
