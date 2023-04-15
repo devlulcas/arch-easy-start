@@ -2,40 +2,22 @@
 
 # 🤖 POST INSTALL 🤖
 
-Some files for automating my post install on arch based distros.
+Scripts to automate the installation of some programs and plugins.
 
-I don't know much about shell scripting, so some of these scripts are not mine.
+> warning: Just a few scripts are mine, the rest are from other people.
+
+> warning: This is just a glorified list of commands.
 
 **Not mine:**
 
-- center.sh
-- fixemoji.sh
+- fix_emoji.sh
 
 ## RUN:
 
-> That one will run scripts that need root and uses pacman.
-
 ```sh
-chmod +x ./init.sh
-sudo ./init.sh
+chmod +x ./install.py
+sudo ./install.py
 reboot
-```
-
-> That one will run scripts that don't need root.
-
-```bash
-chmod +x ./aur.sh
-./aur.sh
-```
-
-## ACTIVATE PLUGINS
-
-```sh
-plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-)
 ```
 
 ## SETUP GIT SSH:
