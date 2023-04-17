@@ -15,8 +15,7 @@ Scripts to automate the installation of some programs and plugins.
 ## RUN:
 
 ```sh
-chmod +x ./install.py
-sudo ./install.py
+python ./install.py
 reboot
 ```
 
